@@ -27,8 +27,6 @@ class Application(tk.Tk):
         self.btn = tk.Button(self, text="Konec", command=self.quit)
         self.btn.grid(row=8, column=3)
        
-
-
     def kontrola(self, event):
         try:
             if int(self.entry.get()) == self.vysledek:
@@ -78,7 +76,6 @@ class Application(tk.Tk):
 
     def quit(self, event=None):
         super().quit()
-
 
 app = Application()
 app.mainloop() 
